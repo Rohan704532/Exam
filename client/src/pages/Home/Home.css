@@ -1,0 +1,50 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50vw;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.divInp{
+    margin: 10px 0px;
+}
+
+.divInp>input{
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 110px;
+}
+
+.divInp>input:focus{
+    outline: none;
+}
+
+.divInpBut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.divInpBut>button{
+    width: 10vw;
+    border: none;
+    background-color: #7a7af5;
+    color: white;
+    border-radius: 10px;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.inpDate{
+    margin-left: 170px !important;
+}

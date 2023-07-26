@@ -1,31 +1,19 @@
-# Frontend Task Essentially AI
+Architecture of project:-
+1. It is divided in two parts :- client and server
 
-## Steps to complete the task
-1. Create a clone of this repo
-2. Complete the tasks given below
-3. Create your own public repo on github and push your code there
-4. Share the repo link as a reply to the mail
+Client :- 
+1. index.js is the root directory from which App component is rendering
+2. In App, we have Home and Data.
+3. Home is default component which will render on visiting the page- We are fetching the data from API and saving it in backend(MongoDB). Two API has been used onc for fetching the data for stocks and another for saving it in database.
+4. Clicking on submit button will take us to Data component, where we can see the stocks results as per the criteria we put on Home componenet (form) using GET API
 
-## Overview
-The task is to build a webpage to display the trade statistics (Open, High, Low, Close, Volume) of a particular stock for a particular day. You should use Polygon free tier API for this task (https://polygon.io/)
+Server :- 
+1. Starting point is app.js file, where we have set-up out server,routes,mongoDB and controller.
+2. .env file contains the URL link for mongo Atlas.
+3. In Models folder we have the Schema set-up.
+4. app.js contaisn two endpoints :- to get the data and to post the data.
 
-## Individual tasks
-1. The given codebase has two parts, client and server.
-2. Go to server folder, you'll see in app.js that a POST route is exposed at /api/fetchStockData. Implement this API to fetch the trade statistics of a particular stock for a particular day using the Polygon API.
-3. Return only the required fields in the response in a json format. Handle various edge cases here along with relevant response codes.
-4. Go to client folder and run the react app. You'll see just a hello world screen for now.
-5. Create a form for the user to input the symbol of the stock and select a date and add a submit button.
-6. On submitting the form, send a request to the api route which is exposed and once the data is back, display the required details in the frontend (Open, High, Low, Close, Volume).
-
-## Evaluation criteria
-1. The logical correctness of all individual tasks mentioned above
-2. Tackling of edge cases
-3. Efficiency of the code
-4. Naming conventions (No need to follow any standard pattern, just describe the pattern and make sure the code is consistent with it)
-5. Project structure (Again, no need to follow a standard pattern. Just make sure the structuring is logical and describe it)
-6. Documentation (This can just be a readme file with bullet points, as long as it explains what you've implemented, you're good to go).
-7. Bonus points for interesting UI (This obviously won't be considered if the core functionality isn't present).
-
-## Optional tasks
-1. Imagine this is a real world scenario which thousands of users use to get the historic data of a stock for a particular day, how would this product change in order to improve the UX.
-2. What new features would you add in this product to increase it's utility for the end user.
+What can be done further to improve the application:-
+1. We can use JWT token to authenticate the user.
+2. Can add more fucntionalities such as, getting multiple data of stocks instead of one.
+3. We can add middlewares.

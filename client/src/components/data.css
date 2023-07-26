@@ -1,0 +1,15 @@
+.button{
+    width: 10vw;
+    border: none;
+    background-color: #7a7af5;
+    color: white;
+    border-radius: 10px;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+}
